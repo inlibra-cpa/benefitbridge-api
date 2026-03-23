@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS schema_version_check (
+    id BIGSERIAL PRIMARY KEY,
+    description VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
