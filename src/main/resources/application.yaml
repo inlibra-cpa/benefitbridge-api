@@ -2,7 +2,7 @@ spring:
   application:
     name: benefitbridge
   profiles:
-    active: local
+    default: local
 
 server:
   port: 8080
