@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/benefitbridge
-    username: benefitbridge_user
-    password: benefitbridge_pass
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/benefitbridge}
+    username: ${SPRING_DATASOURCE_USERNAME:benefitbridge_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:benefitbridge_pass}
     driver-class-name: org.postgresql.Driver
 
   jpa:
